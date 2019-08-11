@@ -1,0 +1,20 @@
+title: 'Login to OC-Dashboard'
+actions:
+  - type: 'visit'
+    url: 'https://stage.businessnetwork.opuscapita.com/'
+    delay: 5000
+
+  - type: 'fill'
+    target: 'input[name=login]'
+    content: 'john.doe@ncc.com'
+    title: "blahblahblah...opuscapita, blah."
+
+  - type: 'fill'
+    target: 'input[name=password]'
+    content: 'test'
+
+  - type: 'click'
+    target: '#loginForm > div > div > div > div > div.form-submit.text-right > input'
+
+  - type: 'wait'
+    time: 3000

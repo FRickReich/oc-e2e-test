@@ -1,0 +1,27 @@
+title: 'test'
+actions:
+  - type: 'visit'
+    url: 'https://github.com'
+    delay: 2000
+
+  - type: 'click'
+    target: 'body > div.position-relative.js-header-wrapper > header > div > div.HeaderMenu.HeaderMenu--logged-out.position-fixed.top-0.right-0.bottom-0.height-fit.position-lg-relative.d-lg-flex.flex-justify-between.flex-items-center.flex-auto > div.d-lg-flex.flex-items-center.px-3.px-lg-0.text-center.text-lg-left > a.HeaderMenu-link.no-underline.mr-3'
+
+  - type: 'fill'
+    target: '#login'
+    content: 'FRickReich'
+
+  - type: 'fill'
+    target: '#password'
+    content: 'ChrisPine09'
+    
+  - type: 'click'
+    target: 'input[type=submit]'
+
+  - type: 'fill'
+    target: '#dashboard-repos-filter-left'
+    content: 'service'
+    delay: 500
+
+  - type: 'click'
+    target: 'body > div.application-main > div > aside.team-left-column.col-12.col-md-4.col-lg-3.bg-white.border-right.border-bottom.hide-md.hide-sm > div.dashboard-sidebar.js-sticky.top-0.px-3.px-md-4.px-lg-4.overflow-auto > div.mb-3.Details.js-repos-container > div > ul:nth-child(3) > li:nth-child(6) > div > a'

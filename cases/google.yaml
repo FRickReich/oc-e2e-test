@@ -1,0 +1,11 @@
+title: 'google search'
+actions:
+  - type: 'visit'
+    url: 'https://www.google.com/'
+
+  - type: 'fill'
+    target: 'input[name=q]'
+    content: 'Hello world'
+    
+  - type: 'press'
+    key: 'Enter'
